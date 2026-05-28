@@ -11,10 +11,6 @@ html,body{
   justify-content:center;
   align-items:center;
 }
-
-nav{
-  background-color:cornflowerblue;
-}
 nav a{
   color:black;
   padding:10px;
@@ -25,16 +21,20 @@ nav a{
 nav a:hover{
   color:white;
 }
-.subbanner{
-  background-color:cornflowerblue;
-  justify-content: center;
-  align-items: center;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-}
 #banner{
-  background-color:blue;
+  background-color:rgb(0, 132, 255);
   color:white;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container nav{
+  flex: 1;
+  background-color: rgb(156, 217, 245);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  border-color: aliceblue;
+  border-radius: 100px;
+  border-width: 20px;
+  font-style:italic;
 }
 #footer{
   background-color:cornflowerblue;
