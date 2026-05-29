@@ -26,8 +26,7 @@ nav a:hover{
   color:white;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.container nav{
-  flex: 1;
+.nav{
   background-color: rgb(156, 217, 245);
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
@@ -43,4 +42,15 @@ nav a:hover{
   left: 0;
   right: 0;
   bottom:0px;
+}
+.card{
+  flex:1;
+  margin:10px;
+  padding:10px;
+  border:1px solid gray;
+  text-align:center;
+  min-width: 180px;
+  max-width: 180px;
+  overflow:hidden;
+  box-shadow:2px 2px 2px black;
 }
