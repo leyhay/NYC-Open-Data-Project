@@ -4,21 +4,21 @@ async function init(){
     info = await fetch(link);
     data = await info.json();
     let output = document.getElementById("output");
-    
-    build = "";
-    for(let i=0;i<data.length;i+=1){
-        pool = data[i]
-        build += `<div class=card>
+
+    function card(data){
+      let build = "";
+      build = `<div class="card">
                      <h3>${pool.permit_type}</h3>
                      <p>${pool.facility_name}</p>
-                     <p>${pool.facility_name}</p>
-                     <p>${pool.facility_name}</p>
-                     <p>${pool.facility_name}</p>
+                     <p>${pool.inspection_date}</p>
+                     <p>${pool.address_st}</p>
+                     <p>${pool.bo}</p>
                      <hr>
-                     <p>${pool.facility_name}</p>
-                     <p>${pool.facility_name}</p>
-                     <p>${pool.facility_name}</p>
-                </div>`
+                     <p>${pool.zip}</p>
+                     <p>${pool.of_general_violations}</p>
+                     <p>${pool.lat}</p>
+                     <p>${pool.long}</p>
+                </div>`;
+                return build;
     }
-    output.innerHTML = build;
-}
+  }
