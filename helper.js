@@ -24,13 +24,19 @@ function showMap(lat, lon){
     mapButton = `<input type="button" onclick="showMap( ${location} )" value="Map">`
   }
 
-  let build = `<div class="card fitted">
-                  <h3>${info.complaint_type}</h3>
-                  <h5>${info.borough}</h5>
-                  <p>${info.incident_zip}</p>
-                  <p>${info.descriptor}</p><hr>
-                  <p>${info.agency_name}<br>(${info.status})</p>
-                  ${mapButton}
-              </div>`;
-  return build;
+  function card(  info ){
+       let build = `<div class="card">
+                       <h2>Pool Inspections</h2>
+                       ${info.permit_type}
+                       ${info.facility_name}    
+                       ${info.address_st}
+                       ${info.inspection_date}
+                       ${info.inspection_type}
+                       <hr>
+                       ${info.zip}
+                       ${info.lat}
+                      ${info.long}
+                   </div>`;
+       return build;
+}
 }

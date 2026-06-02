@@ -1,24 +1,66 @@
 let data;
-async function init(){
-    let link = "311.json"
-    info = await fetch(link);
-    data = await info.json();
-    let output = document.getElementById("output");
+async function filter(){
+  let link = "311.json"
+  info = await fetch(link);
+  data = await info.json();
 
-    function card(data){
-      let build = "";
-      build = `<div class="card">
-                     <h3>${pool.permit_type}</h3>
-                     <p>${pool.facility_name}</p>
-                     <p>${pool.inspection_date}</p>
-                     <p>${pool.address_st}</p>
-                     <p>${pool.bo}</p>
-                     <hr>
-                     <p>${pool.zip}</p>
-                     <p>${pool.of_general_violations}</p>
-                     <p>${pool.lat}</p>
-                     <p>${pool.long}</p>
-                </div>`;
-                return build;
-    }
+  output = document.getElementById("output");
+  result = document.getElementById("result");
+  let build = "";
+  let ct = 0;
+  for(let i = 0; i < data.length; i++){
+    let pool = data[i];
+    build = `<div class="card">
+                       <h2>Pool Inspections</h2>
+                       ${pool.permit_type}
+                       ${pool.facility_name}    
+                       ${pool.address_st}
+                       ${pool.inspection_date}
+                       ${pool.inspection_type}
+                       <hr>
+                       ${pool.zip}
+                       ${pool.lat}
+                       ${pool.long}
+                   </div>`;
+    ct++;
   }
+  result.innerHTML = `${ct} Results found.`
+  output.innerHTML = build;
+
+  let permit_type = fillDropDown("permit_type");
+  document.getElementById("permit_type").innerHTML = permit_types;
+
+  let facility_name = fillDropDown("facility_name");
+  document.getElementById("facility_name").innerHTML = facility_name;
+
+  let zip = fillDropDown("zip");
+  document.getElementById("zip").innerHTML = zip;
+  
+}
+let data;
+async function home(){
+  let link = "311.json"
+  info = await fetch(link);
+  data = await info.json();
+
+  output = document.getElementById("output");
+  result = document.getElementById("result");
+  let build = "";
+  let ct = 0;
+  for(let i = 0; i < data.length; i++){
+    let pool = data[i];
+    build = `<div class="card">
+                       <h2>Pool Inspections</h2>
+                       ${pool.permit_type}
+                       ${pool.facility_name}    
+                       ${pool.address_st}
+                       ${pool.inspection_date}
+                       ${pool.inspection_type}
+                       <hr>
+                       ${pool.zip}
+                       ${pool.lat}
+                       ${pool.long}
+                   </div>`;
+    ct++;
+  }
+}

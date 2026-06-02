@@ -35,6 +35,9 @@ nav a:hover{
   border-width: 20px;
   font-style:italic;
 }
+.container nav{
+  flex:1;
+}
 #footer{
   background-color:cornflowerblue;
   color:white;
