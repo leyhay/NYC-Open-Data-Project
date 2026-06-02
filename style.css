@@ -10,6 +10,7 @@ html,body{
 .center{
   justify-content:center;
   align-items:center;
+  font-family:'Times New Roman', Times, serif;
 }
 nav a{
   color:black;
@@ -34,9 +35,7 @@ nav a:hover{
   border-radius: 100px;
   border-width: 20px;
   font-style:italic;
-}
-.container nav{
-  flex:1;
+  flex-direction:row;
 }
 #footer{
   position:fixed;
@@ -45,6 +44,7 @@ nav a:hover{
   left: 0;
   right: 0;
   bottom:0px;
+  font-size:20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .card{
@@ -61,10 +61,16 @@ nav a:hover{
 }
 .enlarge{
   font-size: 30px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:'Times New Roman', Times, serif;
   margin: 30px;
 }
 .boom{
   position: sticky;
+  border-width: 2px;
+  padding:2px;
+  margin:2px;
   top: 0%;
+}
+.luck{
+  position:absolute;
 }
