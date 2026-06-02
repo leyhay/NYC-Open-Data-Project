@@ -57,3 +57,7 @@ nav a:hover{
   overflow:hidden;
   box-shadow:2px 2px 2px black;
 }
+.enlarge{
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
