@@ -10,7 +10,6 @@ html,body{
 .center{
   justify-content:center;
   align-items:center;
-  font-family:'Times New Roman', Times, serif;
 }
 nav a{
   color:black;
@@ -61,8 +60,14 @@ nav a:hover{
 }
 .enlarge{
   font-size: 30px;
-  font-family:'Times New Roman', Times, serif;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 30px;
+}
+h2 a{
+  text-decoration: none;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color:rgb(137, 143, 145);
+  font-size: 30px;
 }
 .boom{
   position: sticky;
@@ -71,6 +76,20 @@ nav a:hover{
   margin:2px;
   top: 0%;
 }
-.luck{
-  position:absolute;
+#bg{
+  padding: 20px;
+}
+#why{
+  padding: 20px;
+}
+#so{
+  padding: 20px;
+}
+#qpo{
+  color:rgb(83, 165, 212);
+  font-size: 30px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  justify-content:center;
+  text-align:center;
+  letter-spacing: 2px;
 }
