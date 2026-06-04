@@ -37,7 +37,7 @@ nav a:hover{
   flex-direction:row;
 }
 #footer{
-  position:fixed;
+  position:sticky;
   background-color:cornflowerblue;
   color:white;
   left: 0;
@@ -64,10 +64,12 @@ nav a:hover{
   margin: 30px;
 }
 h2 a{
-  text-decoration: none;
   font-family:Georgia, 'Times New Roman', Times, serif;
-  color:rgb(137, 143, 145);
   font-size: 30px;
+
+}
+a:hover{
+  color:white;
 }
 .boom{
   position: sticky;
