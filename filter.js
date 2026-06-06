@@ -5,25 +5,21 @@ async function filter(){
   data = await info.json();
 
   output = document.getElementById("output");
-  result = document.getElementById("result");
   let build = "";
-  let ct = 0;
-  for(let i = 0; i < data.length; i++){
+  for(let i = 0; i < data.length; i+=1){
     let pool = data[i];
     build = `<div class="card">
                   <h2>Pool Inspections</h2>
-                  ${pool.permit_type}
-                  ${pool.facility_name}    
-                  ${pool.address_st}
-                  ${pool.inspection_date}
-                  ${pool.inspection_type}
+                  Permit type : ${pool.permit_type}<br>
+                  Facility name: ${pool.facility_name}<br>  
+                  Inspection date : ${pool.inspection_date}<br>
+                  Number of violations : ${pool.of_all_violations}<br>
                   <hr>
-                  ${pool.zip}
-                  ${pool.lat}
-                  ${pool.long}
+                  Borough : ${pool.bo}<br>
+                  Zip code : ${pool.zip}<br>
+                  Latitude : ${pool.lat}<br>
+                  Longitude: ${pool.long}
               </div>`;
-    ct++;
   }
-  result.innerHTML = `${ct} Results found.`
   output.innerHTML = build;
 }
