@@ -4,11 +4,11 @@ async function filter(){
   info = await fetch(link);
   data = await info.json();
 
-  output = document.getElementById("output");
+  let output = document.getElementById("output");
   let build = "";
   for(let i = 0; i < data.length; i+=1){
     let pool = data[i];
-    build = `<div class="card">
+    build += `<div class="card">
                   <h2>Pool Inspections</h2>
                   Permit type : ${pool.permit_type}<br>
                   Facility name: ${pool.facility_name}<br>  

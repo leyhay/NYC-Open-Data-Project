@@ -37,6 +37,7 @@ nav a:hover{
   flex-direction:row;
 }
 #footer{
+  position:fixed;
   position:sticky;
   background-color:cornflowerblue;
   color:white;
