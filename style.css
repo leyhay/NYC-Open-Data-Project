@@ -72,13 +72,6 @@ h2 a{
 a:hover{
   color:white;
 }
-.boom{
-  position: sticky;
-  border-width: 2px;
-  padding:2px;
-  margin:2px;
-  top: 0%;
-}
 #bg{
   padding: 20px;
 }
