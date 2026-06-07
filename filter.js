@@ -8,7 +8,7 @@ async function filter(){
   let build = "";
   for(let i=0;i<data.length;i+=1){
     let pool = data[i];
-    build += `<div class="card">
+    build += `<div class="container card">
                   <h3>Facility name: ${pool.facility_name}</h3>
                   Permit type : ${pool.permit_type} 
                   Inspection date : ${pool.inspection_date}
