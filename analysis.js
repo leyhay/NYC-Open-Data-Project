@@ -1,9 +1,11 @@
 
-let data;
+let data, output, result;
 async function analysis(){
   let link = "311.json"
   info = await fetch(link);
-  pool = await info.json();
+  data = await info.json();
+}
+  let output = document.getElementById("output");
   var chart = c3.generate({
     analysis: {
         columns: [
@@ -14,4 +16,3 @@ async function analysis(){
     }
 })
 output.innerHTML
-};
