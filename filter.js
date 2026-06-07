@@ -14,11 +14,11 @@ async function filter(){
                   Inspection date : ${pool.inspection_date}
                   Number of violations : ${pool.of_all_violations}
                   <hr>
-                  Borough : ${pool.bo}
+                  Borough : ${pool.bo}<br>
                   Zip code : ${pool.zip}
                   Latitude : ${pool.lat}
                   Longitude: ${pool.long}
               </div>`
-  }
-  output.innerHTML = build;
+            }
+output.innerHTML = build;
 }
