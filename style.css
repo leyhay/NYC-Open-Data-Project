@@ -37,17 +37,19 @@ nav a:hover{
   flex-direction:row;
 }
 #footer{
-  position:sticky;
+  padding-bottom: 20px;
+  position:fixed;
   background-color:cornflowerblue;
   color:white;
   left: 0;
   right: 0;
-  bottom:0px;
+  bottom:20px;
   font-size:20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #bottom{
-  background-color: cornflowerblue;
+  position: fixed;
+  background-color: rgb(156, 217, 245);
   color:white;
   font-size:20px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -56,7 +58,11 @@ nav a:hover{
   bottom:0px;
   left:0px;
   right:0px;
-  flex:1;
+  flex:2;
+}
+.make{
+  flex:2;
+  text-align:center;
 }
 .card{
   flex:1;

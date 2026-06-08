@@ -6,8 +6,12 @@
     <title>Pool Inspections</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="analysis.js"></script>
+    <script src="helper.js"></script>
+    <link href="c3.css" rel="stylesheet" type="text/css" />
+    <script src="d3.js"></script>
+    <script src="c3.js"></script>
    </head>
-  <body onload="analysis()">
+   <body onload="analysis()">
     <div id="banner" class="container center">
       <h1> CHARTS AND ANALYSIS </h1>
     </div>
@@ -16,16 +20,25 @@
       <a href = "filter.html">Filter & Information</a>
     </nav>
 
-
-
+    <div class="container">
+      <h4 class="container center">Here are some charts to see the data of how many violations were recorded in each borough (Queens, Manhatten, Bronx, Brooklyn, Staten Island)</h4>
+      <select id="chartType" style="width:200px;">
+        <option>Select Chart Type</option>
+        <option value="bar">Bar</option>
+        <option value="spline">Spline</option>
+        <option value="donut">Donut</option>
+      </select>
+      <input type="button" onclick="ByNumber()" value="Display">
+    </div>
+    <div class="container subbanner"><br></div>
 
     <div id="output"></div>
     <div id="footer" class="container center">
-      <div><h3>Pool Inspections of NYC</h3></div>
+      <div><h3>Pool Inspections of NYC</h3><br></div>
     </div>
     <div class="container center" id="bottom">
-      <div><a href ="https://data.cityofnewyork.us/Health/NYC-Pool-Inspections/3kfa-rvez/about_data" target="_blank">ABOUT</a></div>
-      <div><a href ="https://data.cityofnewyork.us/resource/3kfa-rvez.json" target="_blank">API</a></div>
+      <div class="make"><h4><a href ="https://data.cityofnewyork.us/Health/NYC-Pool-Inspections/3kfa-rvez/about_data" target="_blank">ABOUT</a></h4></div><hr>
+      <div class="make"><h4><a href ="https://data.cityofnewyork.us/resource/3kfa-rvez.json" target="_blank">API</a></h4></div>
     </div>   
   </body>
 </html>
